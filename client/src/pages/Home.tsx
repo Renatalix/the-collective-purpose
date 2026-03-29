@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Vision from "@/components/Vision";
 import Philosophy from "@/components/Philosophy";
+import FirstPrinciples from "@/components/FirstPrinciples";
 import Manifesto from "@/components/Manifesto";
 import Projects from "@/components/Projects";
 import ConversationStarters from "@/components/ConversationStarters";
@@ -16,6 +17,7 @@ export default function Home() {
         <Hero />
         <Vision />
         <Philosophy />
+        <FirstPrinciples />
         <Manifesto />
         <Projects />
         <ConversationStarters />

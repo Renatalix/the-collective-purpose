@@ -8,19 +8,22 @@ const forces = [
     title: "Human",
     subtitle: "Meaning Makers",
     description: "Humans create culture, define values, and give purpose to tools and systems. Technology should amplify human potential—not erase identity.",
-    image: humanImg
+    image: humanImg,
+    hue: "sepia(0.3) saturate(1.4) hue-rotate(-10deg) brightness(1.05)"
   },
   {
     title: "Nature",
     subtitle: "Foundational Intelligence",
     description: "The oldest intelligence on Earth. It embodies balance, regeneration, and resilience. Any future that ignores nature will ultimately collapse.",
-    image: natureImg
+    image: natureImg,
+    hue: "sepia(0.2) saturate(1.5) hue-rotate(80deg) brightness(1.05)"
   },
   {
     title: "Machine",
     subtitle: "New Capability",
     description: "The newest form of intelligence entering human systems. Machines expand what humanity can build, analyze, and create, but require human values to guide their use.",
-    image: machineImg
+    image: machineImg,
+    hue: "sepia(0.2) saturate(1.4) hue-rotate(170deg) brightness(1.05)"
   }
 ];
 
@@ -49,7 +52,8 @@ export default function Philosophy() {
                 <img 
                   src={force.image} 
                   alt={force.title}
-                  className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+                  className="w-full h-full object-cover transition-all duration-1000 group-hover:scale-105"
+                  style={{ filter: force.hue }}
                 />
               </div>
               <h3 className="text-2xl font-bold mb-2">{force.title}</h3>
